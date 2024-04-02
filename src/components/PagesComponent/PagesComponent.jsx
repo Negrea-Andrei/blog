@@ -1,10 +1,30 @@
-import style from "./pagesComponent.module.css"
-import React from 'react'
+"use client";
 
-const PagesComponent = () => {
+import React from "react";
+import style from "./pagination.module.css";
+import { useRouter } from "next/navigation";
+
+const Pagination = ({ page, hasPrev, hasNext }) => {
+  const router = useRouter();
+
   return (
-    <div className={style.container}>PagesComponent</div>
-  )
-}
+    <div className={style.container}>
+      <button
+        className={style.button}
+        disabled={!hasPrev}
+        onClick={() => router.push(`?page=${page - 1}`)}
+      >
+        Previous
+      </button>
+      <button
+        disabled={!hasNext}
+        className={style.button}
+        onClick={() => router.push(`?page=${page + 1}`)}
+      >
+        Next
+      </button>
+    </div>
+  );
+};
 
-export default PagesComponent
+export default Pagination;
