@@ -1,13 +1,13 @@
-"use client"
-import style from "./authLinks.module.css"
-import Link from 'next/link'
-import React, { useState } from 'react'
-
+"use client";
+import Link from "next/link";
+import style from "./authLinks.module.css";
+import { useState } from "react";
+import { signOut, useSession } from "next-auth/react";
 
 const AuthLinks = () => {
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
 
-  const status = "notauthenticated"
+  const { status } = useSession();
 
   return (
     <>
@@ -20,7 +20,7 @@ const AuthLinks = () => {
           <Link href="/write" className={style.link}>
             Write
           </Link>
-          <span className={style.link}>
+          <span className={style.link} onClick={signOut}>
             Logout
           </span>
         </>
@@ -46,7 +46,7 @@ const AuthLinks = () => {
         </div>
       )}
     </>
-  )
-}
+  );
+};
 
-export default AuthLinks
+export default AuthLinks;
