@@ -8,7 +8,7 @@ const Footer = () => {
     <div className={style.container}>
       <div className={style.info}>
         <div className={style.logo}>
-          <Image src="/logo.png" alt="Andrei" width={50} height={50} />
+          <Image src="/logo.svg" alt="Andrei" width={50} height={50} />
           <h1 className={style.logoText}>GOOD NEWS</h1>
         </div>
         <p className={style.desc}>
@@ -18,10 +18,8 @@ const Footer = () => {
           repellendus dorales.
         </p>
         <div className={style.icons}>
-          <Image src="/facebook.png" alt="" width={18} height={18} />
-          <Image src="/instagram.png" alt="" width={18} height={18} />
-          <Image src="/tiktok.png" alt="" width={18} height={18} />
-          <Image src="/youtube.png" alt="" width={18} height={18} />
+          <Image src="/github.png" alt="" width={18} height={18} />
+          <Image src="/linkedin.png" alt="" width={18} height={18} />
         </div>
       </div>
       <div className={style.links}>
@@ -34,17 +32,17 @@ const Footer = () => {
         </div>
         <div className={style.list}>
           <span className={style.listTitle}>Tags</span>
-          <Link href="/">Style</Link>
-          <Link href="/">Fashion</Link>
-          <Link href="/">Coding</Link>
+          <Link href="/">Nature</Link>
+          <Link href="/">Science</Link>
+          <Link href="/">Food</Link>
+          <Link href="/">Culture</Link>
           <Link href="/">Travel</Link>
+          <Link href="/">Coding</Link>          
         </div>
         <div className={style.list}>
           <span className={style.listTitle}>Social</span>
-          <Link href="/">Facebook</Link>
-          <Link href="/">Instagram</Link>
-          <Link href="/">Tiktok</Link>
-          <Link href="/">Youtube</Link>
+          <Link href="/">Github</Link>
+          <Link href="/">Linkedin</Link>
         </div>
       </div>
     </div>

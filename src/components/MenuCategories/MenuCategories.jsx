@@ -9,10 +9,10 @@ const MenuCategories = () => {
         href="/blog?cat=style"
         className={`${style.categoryItem} ${style.style}`}
       >
-        Style
+        Nature
       </Link>
       <Link href="/blog" className={`${style.categoryItem} ${style.fashion}`}>
-        Fashion
+        Science
       </Link>
       <Link href="/blog" className={`${style.categoryItem} ${style.food}`}>
         Food
