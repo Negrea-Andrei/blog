@@ -7,11 +7,11 @@ const MenuCategories = () => {
     <div className={style.categoryList}>
       <Link
         href="/blog?cat=style"
-        className={`${style.categoryItem} ${style.style}`}
+        className={`${style.categoryItem} ${style.nature}`}
       >
         Nature
       </Link>
-      <Link href="/blog" className={`${style.categoryItem} ${style.fashion}`}>
+      <Link href="/blog" className={`${style.categoryItem} ${style.science}`}>
         Science
       </Link>
       <Link href="/blog" className={`${style.categoryItem} ${style.food}`}>
