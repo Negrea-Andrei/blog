@@ -6,7 +6,7 @@ const MenuCategories = () => {
   return (
     <div className={style.categoryList}>
       <Link
-        href="/blog?cat=style"
+        href="/blog?cat=nature"
         className={`${style.categoryItem} ${style.nature}`}
       >
         Nature
