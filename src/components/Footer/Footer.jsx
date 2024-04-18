@@ -26,23 +26,21 @@ const Footer = () => {
         <div className={style.list}>
           <span className={style.listTitle}>Links</span>
           <Link href="/">Homepage</Link>
-          <Link href="/">Blog</Link>
-          <Link href="/">About</Link>
-          <Link href="/">Contact</Link>
+          <Link href="https://andrei-negrea-contact.onrender.com/">About</Link>
         </div>
         <div className={style.list}>
           <span className={style.listTitle}>Tags</span>
-          <Link href="/">Nature</Link>
-          <Link href="/">Science</Link>
-          <Link href="/">Food</Link>
-          <Link href="/">Culture</Link>
-          <Link href="/">Travel</Link>
-          <Link href="/">Coding</Link>          
+          <Link href="/blog?cat=nature">Nature</Link>
+          <Link href="/blog?cat=science">Science</Link>
+          <Link href="/blog?cat=food">Food</Link>
+          <Link href="/blog?cat=culture">Culture</Link>
+          <Link href="/blog?cat=travel">Travel</Link>
+          <Link href="/blog?cat=coding">Coding</Link>          
         </div>
         <div className={style.list}>
           <span className={style.listTitle}>Social</span>
-          <Link href="/">Github</Link>
-          <Link href="/">Linkedin</Link>
+          <Link href="https://github.com/Negrea-Andrei">Github</Link>
+          <Link href="https://www.linkedin.com/in/andrei-negrea-49a669239/">Linkedin</Link>
         </div>
       </div>
     </div>

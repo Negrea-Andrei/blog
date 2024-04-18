@@ -1,6 +1,6 @@
 import style from "./navbar.module.css"
 import React from 'react'
-import test from "../../../public/next.svg"
+import logo from "../../../public/logo.svg"
 import Image from "next/image"
 import Link from "next/link"
 import AuthLinks from "../authLinks/AuthLinks"
@@ -10,16 +10,13 @@ const Navbar = () => {
   return (
     <div className={style.container}>
       <div className={style.social}>
-        <Image src ={test} alt="socials" width={24} height={23} />
-        <Image src ={test} alt="socials" width={24} height={23} />
-        <Image src ={test} alt="socials" width={24} height={23} />
+        <Image src ={logo} alt="socials" width={75} height={75} />
       </div>
       <div className={style.logo}>GOOD NEWS</div>
       <div className={style.links}>
         <ThemeToggle />
         <Link href="/" className={style.link}>Homepage</Link>
-        <Link href="/" className={style.link}>Contact</Link>
-        <Link href="/" className={style.link}>About</Link>
+        <Link href="https://andrei-negrea-contact.onrender.com/" className={style.link}>About</Link>
         <AuthLinks />
       </div>
     </div>
