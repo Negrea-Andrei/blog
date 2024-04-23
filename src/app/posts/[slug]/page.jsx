@@ -4,7 +4,7 @@ import Image from "next/image";
 import Comments from "../../../components/Comments/Comments";
 
 const getData = async (slug) => {
-  const res = await fetch(`https://blog-b8wi.onrender.com/api/posts/${slug}`, {
+  const res = await fetch(`http://localhost:3000/api/posts/${slug}`, {
     cache: "no-store",
   });
 
