@@ -1,11 +1,12 @@
-/** @type {import('next').NextConfig} */
+// next.config.mjs
+
 const nextConfig = {
     images: {
         remotePatterns: [
-            'https://lh3\\.googleusercontent\\.com/.*',
-            'https://firebasestorage\\.googleapis\\.com/.*'
+            { domain: 'lh3.googleusercontent.com', path: '/.*' },
+            { domain: 'firebasestorage.googleapis.com', path: '/.*' }
         ]
     }
-}
+};
 
 export default nextConfig;
