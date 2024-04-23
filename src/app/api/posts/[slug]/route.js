@@ -10,7 +10,6 @@ export const GET = async (req, { params }) => {
             where: { slug },
             data: { views: { increment: 1 } },
             include: { user: true },
-            skip: 0,
         });
 
         return new NextResponse(JSON.stringify(post, { status: 200 }));
