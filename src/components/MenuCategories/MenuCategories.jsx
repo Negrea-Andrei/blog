@@ -11,19 +11,19 @@ const MenuCategories = () => {
       >
         Nature
       </Link>
-      <Link href="/blog" className={`${style.categoryItem} ${style.science}`}>
+      <Link href="/blog?cat=science" className={`${style.categoryItem} ${style.science}`}>
         Science
       </Link>
-      <Link href="/blog" className={`${style.categoryItem} ${style.food}`}>
+      <Link href="/blog?cat=food" className={`${style.categoryItem} ${style.food}`}>
         Food
       </Link>
-      <Link href="/blog" className={`${style.categoryItem} ${style.travel}`}>
+      <Link href="/blog?cat=travel" className={`${style.categoryItem} ${style.travel}`}>
         Travel
       </Link>
-      <Link href="/blog" className={`${style.categoryItem} ${style.culture}`}>
+      <Link href="/blog?cat=culture" className={`${style.categoryItem} ${style.culture}`}>
         Culture
       </Link>
-      <Link href="/blog" className={`${style.categoryItem} ${style.coding}`}>
+      <Link href="/blog?cat=coding" className={`${style.categoryItem} ${style.coding}`}>
         Coding
       </Link>
     </div>
